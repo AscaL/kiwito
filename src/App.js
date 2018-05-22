@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
-import BotBar from './components/BotBar';
-import NavBar from './components/NavBar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainPage from './components/MainPage';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <NavBar />
-          <BotBar />
-        </div>
+        <Fragment>
+          <CssBaseline />
+          <Header />
+          <MainPage />
+          <Footer />
+        </Fragment>
       </Router>
     );
   }
