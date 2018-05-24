@@ -12,6 +12,9 @@ export default props => (
     <Grid item xs>
       <Paper>
         <MapComponent
+          defaultZoom={15}
+          defaultCenter={{ lat: 41.9, lng: 12.511 }}
+          position={{ lat: 41.9, lng: 12.511 }}
           isMarkerShown
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
